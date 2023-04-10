@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  environment:
+    PATH: /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+  tasks:
+    - include_role:
+        name: /Users/niti8714/git/rax-ansible-library/python
+    - include_role:
+        name: /Users/niti8714/git/rax-ansible-library/pip
+    - include_role:
+        name: /Users/niti8714/git/rax-ansible-library/tomcat
