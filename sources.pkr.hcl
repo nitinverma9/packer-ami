@@ -9,6 +9,7 @@ packer {
 
 source "amazon-ebs" "image" {
   ami_name = "${var.ami_name}-${formatdate("YYYYMMDDhhmmss", timestamp())}"
+  #galaxy_file = "requirements.yml"
   spot_instance_types = ["t3a.small", "t3a.medium"]
   spot_price = 0.0854
   region        = "us-east-1"
