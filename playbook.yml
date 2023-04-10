@@ -4,8 +4,8 @@
     PATH: /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
   tasks:
     - include_role:
-        name: /Users/niti8714/git/rax-ansible-library/python
+        name: /Users/niti8714/git/ansible-library/python
     - include_role:
-        name: /Users/niti8714/git/rax-ansible-library/pip
+        name: /Users/niti8714/git/ansible-library/pip
     - include_role:
-        name: /Users/niti8714/git/rax-ansible-library/tomcat
+        name: /Users/niti8714/git/ansible-library/tomcat
